@@ -60,7 +60,7 @@ module.exports = {
   devtool: 'source-map',
   // excluding dependencies from getting bundled
   externals: {
-    // vscode: 'commonjs vscode',
+    vscode: 'commonjs vscode',
     'vscode-nls': 'commonjs vscode-nls'
   },
   // Automatically resolve certain extensions.
