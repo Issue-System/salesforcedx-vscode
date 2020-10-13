@@ -35,6 +35,7 @@ const getEntryObject = () => {
     return acc;
   }, {});
 
+  console.log('webpack testObj ==>', testObj);
   return Object.assign(testObj, srcObj);
 };
 
@@ -60,6 +61,8 @@ module.exports = {
   devtool: 'source-map',
   // excluding dependencies from getting bundled
   externals: {
+    '@salesforce/core': 'commonjs @salesforce/core',
+    '@salesforce/salesforcedx-test-utils-vscode': 'commonjs @salesforce/salesforcedx-test-utils-vscode',
     vscode: 'commonjs vscode',
     'vscode-nls': 'commonjs vscode-nls'
   },
