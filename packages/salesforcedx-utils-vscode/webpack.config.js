@@ -63,6 +63,7 @@ module.exports = {
   externals: {
     '@salesforce/core': 'commonjs @salesforce/core',
     '@salesforce/salesforcedx-test-utils-vscode': 'commonjs @salesforce/salesforcedx-test-utils-vscode',
+    'remap-istanbul': 'commonjs remap-istanbul',
     vscode: 'commonjs vscode',
     'vscode-nls': 'commonjs vscode-nls'
   },
